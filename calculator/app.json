@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Calculator",
+    "slug": "Calculator",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/calculator.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jeancy.Calculator",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/calculator.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.jeancy.Calculator"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/calculator.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/calculator.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "aad17c8d-5c8a-4e8a-adf5-ea1751b023a8"
+      }
+    }
+  }
+}
